@@ -19,7 +19,6 @@ const forPlugin = (path, stats) => {
 
 const computedHash = {}
 module.exports = function({ types: t }) {
-  let lastHash = ''
 
   const computeHash = (hashSeed = '', filePath) => {
     if (computedHash[filePath]) {
@@ -27,9 +26,8 @@ module.exports = function({ types: t }) {
     }
 
     const relative = path.relative(process.cwd(), filePath)
-    const hash = md5(hashSeed + relative + lastHash).substr(0, 8)
+    const hash = md5(hashSeed + relative ).substr(0, 8)
     computedHash[filePath] = hash
-    lastHash = hash
     return hash
   }
 
