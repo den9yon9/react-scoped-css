@@ -1,7 +1,7 @@
-import { compileStyle } from '@vue/component-compiler-utils'
-import qs from 'qs'
+const { compileStyle } = require('@vue/component-compiler-utils')
+const qs = require('qs');
 
-export default function rollupPluginScopedCss() {
+module.exports = function rollupPluginScopedCss() {
   return {
     name: 'rollup-plugin-scoped-css',
     transform(source, id) {

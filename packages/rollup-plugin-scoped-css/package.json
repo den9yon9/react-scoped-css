@@ -1,9 +1,8 @@
 {
-  "name": "rollup-plugin-scoped-css",
-  "version": "1.0.0",
+  "name": "@den9yon9/rollup-plugin-scoped-css",
+  "version": "1.0.2",
   "description": "",
-  "type": "module",
-  "main": "rollup-plugin-scoped-css.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
