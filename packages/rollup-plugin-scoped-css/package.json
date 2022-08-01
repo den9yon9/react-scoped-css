@@ -1,5 +1,5 @@
 {
-  "name": "@den9yon9/rollup-plugin-scoped-css",
+  "name": "@ola/rollup-plugin-scoped-css",
   "version": "1.0.2",
   "description": "",
   "main": "./index.js",
